@@ -1,5 +1,6 @@
 vim.opt.fileformats = "unix,dos"
 
+vim.opt.relativenumber = true
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
 
 return {
