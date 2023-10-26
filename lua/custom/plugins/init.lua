@@ -9,7 +9,18 @@ return {
     'folke/trouble.nvim',
     dependencies = {
       "nvim-tree/nvim-web-devicons",
-    }
+    },
+  },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {}
+  },
+  {
+    'norcalli/nvim-colorizer.lua',
+    config = function()
+      require 'colorizer'.setup()
+    end
   },
   { 'nvim-treesitter/nvim-treesitter-context' },
   { 'HiPhish/rainbow-delimiters.nvim' },
