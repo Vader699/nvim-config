@@ -4,6 +4,12 @@ vim.opt.relativenumber = true
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
 vim.opt.scrolloff = 8
 
+vim.keymap.set("", "<C-d>", "<C-d>zz")
+vim.keymap.set("", "<C-u>", "<C-u>zz")
+vim.keymap.set("", "n", "nzzzv")
+vim.keymap.set("", "N", "Nzzzv")
+vim.keymap.set("x", "<leader>p", '"_dP')
+
 return {
   {
     'folke/trouble.nvim',
