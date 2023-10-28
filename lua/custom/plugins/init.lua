@@ -10,6 +10,12 @@ vim.keymap.set("", "n", "nzzzv")
 vim.keymap.set("", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", '"_dP')
 
+vim.keymap.set("n", ":Q", ":q")
+vim.keymap.set("n", ":Q!", ":q!")
+vim.keymap.set("n", ":WQ", ":wq")
+vim.keymap.set("n", ":W", ":w")
+vim.keymap.set("n", ":W!", ":w!")
+
 return {
   {
     'folke/trouble.nvim',
@@ -31,4 +37,5 @@ return {
   { 'nvim-treesitter/nvim-treesitter-context' },
   { 'HiPhish/rainbow-delimiters.nvim' },
   { 'github/copilot.vim' },
+  { 'ThePrimeagen/vim-be-good' }
 }
