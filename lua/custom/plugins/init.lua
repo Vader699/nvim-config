@@ -37,5 +37,15 @@ return {
   { 'nvim-treesitter/nvim-treesitter-context' },
   { 'HiPhish/rainbow-delimiters.nvim' },
   { 'github/copilot.vim' },
-  { 'ThePrimeagen/vim-be-good' }
+  { 'ThePrimeagen/vim-be-good' },
+  {
+    "pmizio/typescript-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    opts = {},
+  },
+  {
+    'f-person/git-blame.nvim',
+    opts = {}
+  },
+  { 'kevinhwang91/nvim-bqf' }
 }
