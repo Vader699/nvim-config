@@ -10,7 +10,6 @@ return {
         "markdownlint",
         "prettier",
         "stylelint",
-        "yamllint",
       },
     })
   end,
