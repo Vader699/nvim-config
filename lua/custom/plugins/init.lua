@@ -39,11 +39,6 @@ return {
   { 'github/copilot.vim' },
   { 'ThePrimeagen/vim-be-good' },
   {
-    "pmizio/typescript-tools.nvim",
-    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-    opts = {},
-  },
-  {
     'f-person/git-blame.nvim',
     opts = {}
   },
