@@ -21,6 +21,10 @@ return {
       python = { "isort", "black" },
       javascript = { { "eslint_d", "eslint", "prettierd", "prettier" } },
       typescript = { { "eslint_d", "eslint", "prettierd", "prettier" } },
+      javascriptreact = { { "eslint_d", "eslint", "prettierd", "prettier" } },
+      typescriptreact = { { "eslint_d", "eslint", "prettierd", "prettier" } },
+      markdown = { { "eslint_d", "eslint", "prettierd", "prettier" } },
+      graphql = { { "eslint_d", "eslint", "prettierd", "prettier" } },
     },
     -- Set up format-on-save
     format_on_save = { timeout_ms = 500, lsp_fallback = true },
