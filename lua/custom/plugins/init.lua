@@ -42,5 +42,9 @@ return {
     'f-person/git-blame.nvim',
     opts = {}
   },
-  { 'kevinhwang91/nvim-bqf' }
+  { 'kevinhwang91/nvim-bqf' },
+  {
+    'tris203/hawtkeys.nvim',
+    config = true
+  }
 }
