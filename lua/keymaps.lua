@@ -1,7 +1,6 @@
 vim.opt.fileformats = 'unix,dos'
 
 vim.opt.relativenumber = true
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
 vim.opt.scrolloff = 8
 
 vim.keymap.set("", "<C-d>", "<C-d>zz")
@@ -21,6 +20,9 @@ vim.o.hlsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
+
+-- Enable mouse mode
+vim.o.mouse = 'a'
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
@@ -76,4 +78,3 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous dia
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
-

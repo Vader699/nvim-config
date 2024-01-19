@@ -1,6 +1,11 @@
 return {
 	-- Git related plugins
-	'tpope/vim-fugitive',
+	{
+		'tpope/vim-fugitive',
+		keys = {
+			{ "<leader>gs", vim.cmd.Git, desc = "Git" },
+		}
+	},
 	'tpope/vim-rhubarb',
 
 	-- Detect tabstop and shiftwidth automatically
@@ -44,5 +49,14 @@ return {
 		'f-person/git-blame.nvim',
 		opts = {}
 	},
-}
 
+	{
+		'ThePrimeagen/vim-apm',
+		config = function()
+			local apm = require("vim-apm")
+
+			apm:setup({})
+			vim.keymap.set("n", "<leader>apm", function() apm:toggle_monitor() end)
+		end
+	},
+}
