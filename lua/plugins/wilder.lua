@@ -13,6 +13,9 @@ return {
 
     wilder.set_option('renderer', wilder.popupmenu_renderer(
       wilder.popupmenu_border_theme({
+        pumblend = 80,
+        left = { ' ', wilder.popupmenu_devicons() },
+        right = { ' ', wilder.popupmenu_scrollbar() },
         highlighter = wilder.basic_highlighter(),
         min_width = '100%', -- minimum height of the popupmenu, can also be a number
         min_height = '50%', -- to set a fixed height, set max_height to the same value
