@@ -52,6 +52,8 @@ return {
         DEBUG = '',
         TRACE = '✎',
       },
+      top_down = false,
+      render = 'compact',
     })
   end,
 }
