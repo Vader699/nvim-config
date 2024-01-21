@@ -13,7 +13,7 @@ return {
 
     wilder.set_option('renderer', wilder.popupmenu_renderer(
       wilder.popupmenu_border_theme({
-        pumblend = 80,
+        pumblend = 50,
         left = { ' ', wilder.popupmenu_devicons() },
         right = { ' ', wilder.popupmenu_scrollbar() },
         highlighter = wilder.basic_highlighter(),
