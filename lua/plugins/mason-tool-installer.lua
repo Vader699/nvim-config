@@ -10,6 +10,8 @@ return {
         "markdownlint",
         "prettier",
         "stylelint",
+        "jsonls",
+        "yamlls"
       },
       auto_update = true
     })
